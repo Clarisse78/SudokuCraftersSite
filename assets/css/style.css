@@ -4,6 +4,16 @@
   font-family: 'Anton', sans-serif;
 }
 
+.bodyc
+{
+  background-color: #131a2e;
+}
+
+h2 
+{
+  color:#ffffff;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -19,7 +29,7 @@ nav {
   padding: 1% 1%;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #1e224c, #e06743);
+  background: #223156;
   border: none;
   color: white;
   text-decoration: none;
@@ -40,21 +50,21 @@ nav img {
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  padding: 0px 15px;
+  padding: 0px 130px;
   position: relative;
 }
 
 .nav-links ul li a {
   color: whitesmoke;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .nav-links ul li::after {
   content: '';
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: #4470c3;
   display: block;
   margin: 0;
   transition: 0.5s;
@@ -129,7 +139,7 @@ nav img {
   /*border-radius: 2rem;*/
   display: inline-block;
   text-decoration: none;
-  color: #ee4719;
+  color: #4470c3;
   border: 2px solid black;
   padding: 15px 30px;
   font-size: 20px;
@@ -158,18 +168,18 @@ nav img {
   /*border-radius: 2rem;*/
   display: inline-block;
   text-decoration: none;
-  color: #ee4719;
-  box-shadow: 0 0 0 2px black; /* Ajoute une ombre noire autour du bouton */
+  color: #4470c3;
+  box-shadow: 0 0 0 3px black; /* Ajoute une ombre noire autour du bouton */
   padding: 15px 30px;
-  font-size: 20px;
+  font-size: 23px;
   background: transparent;
   position: relative;
   cursor: pointer;
-  background: rgba(0,0,0,.6);
+  background: #171a3d;
 }
 
 .bouton2:hover {
-  background: #1e224c;
+  background: rgb(30, 34, 77);
   transition: 1s;
 }
 
@@ -186,7 +196,7 @@ h1 {
 }
 
 p {
-  color: #777;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -206,7 +216,7 @@ p2 {
 
 .col {
   flex-basis: 31%;
-  background: #fff3f3;
+  background: #2d3451;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px;
@@ -215,9 +225,11 @@ p2 {
   text-decoration: none;
   color: black;
 }
+
 .liste-sout {
   text-align: left;
   font-size: 17px;
+  color:#ffffff;
 }
 
 row56 {
@@ -353,7 +365,7 @@ img {
 .col1 {
   flex-direction: column;
   flex-grow: 1; /* Ajout de la propriété flex-grow */
-  background: -webkit-linear-gradient(top, #1f2574 , #d33c0e );
+  background: #223156;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px;
@@ -377,6 +389,8 @@ img {
 .row {
   margin-top: 4%;
   display: flex;
+  padding: 0px 130px;
+
 }
 
 
