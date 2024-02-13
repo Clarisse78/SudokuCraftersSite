@@ -135,6 +135,7 @@ img {
 .row-3{
 	padding: 8% 10% 10% 10%;
 	text-align: center;
+	justify-content: center;
 }
 
 @media (min-width:767px) {
@@ -148,6 +149,7 @@ img {
 	padding: 3% 4% 3% 4%;
 	background: #E8D8C4;
 	transition: all 0.5s ease-out;
+	max-width: 30%;
 }
 
 .row-3 p{
@@ -167,3 +169,5 @@ img {
 a:hover {
 	color: rgb(58, 58, 198);
   }
+
+

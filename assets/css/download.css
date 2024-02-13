@@ -2,7 +2,7 @@
 .defenses{
 	background-color: #C7B7A3;
 }
-.defenses h1{
+h1{
 	background: -webkit-linear-gradient(top, #d37e0e 10%, #440505 90%);
 	background-clip: border-box;
 	background-clip: text;
@@ -93,13 +93,13 @@ h2 {
 
   .images-proxima{
 	background-color: #C7B7A3;
-	padding: 4%;
+	padding: 1%;
 }
 
   .grid{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto); 
+    grid-template-rows: repeat(2, auto); 
     grid-column-gap: 10px; 
     grid-row-gap: 10px;
   }
@@ -107,7 +107,7 @@ h2 {
   @media (min-width:1001px)
   {
 	.grid{
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, auto); 
 		grid-column-gap: 10px; 
 		grid-row-gap: 10px;
@@ -118,7 +118,7 @@ h2 {
   {
 	.grid{
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(6, auto); 
+		grid-template-rows: repeat(4, auto); 
 		grid-column-gap: 10px; 
 		grid-row-gap: 10px;
 	  }
