@@ -1,0 +1,169 @@
+* {
+	line-height : 1;
+}
+
+/* Main with Image Proxima */
+.main-background{
+	position: relative;
+	height: 100vh;
+	background-color: #C7B7A3;
+	border: none;
+	background-position: center center;
+}
+
+
+/* Media query pour les appareils avec une largeur d'écran maximale de 768px (comme les iPads en mode portrait) */
+@media (max-width: 1280px) {
+    .main-background {
+        height: 65vh; /* Ajustez la hauteur selon vos préférences */
+    }
+}
+
+/* Media query pour les appareils avec une largeur d'écran maximale de 480px (comme les téléphones) */
+@media (max-width: 480px) {
+    .main-background {
+        height: 60vh; /* Ajustez la hauteur selon vos préférences */
+    }
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.text-box {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+    padding-top: 5%;
+}
+
+.text-box h1 {
+	font-size: 110px;
+	background: -webkit-linear-gradient(top, #d37e0e 10%, #440505 90%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+    letter-spacing: -10px;
+}
+
+
+.text-box p {
+	font-size: 50px;
+	color: #6D2932;
+    letter-spacing: -4px;
+	margin-top: 2%;
+}
+
+
+@media (max-width:767px)
+{
+	.text-box h1 {
+		font-size: 84px;
+		line-height: 1;
+	}
+	.text-box p {
+		font-size: 37px;
+	}
+}
+
+.bouton {
+	display: inline-block;
+	text-decoration: none;
+	color: #ee4719;
+	border: 2px solid black;
+	padding: 15px 30px;
+	font-size: 20px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	background: rgba(0,0,0,.6);
+	font-variant: small-caps;
+	margin-top: 2%;
+}
+
+.bouton:hover {
+	border: 1px solid #1e224c;
+	background: #1e224c;
+	transition: 1s;
+}
+
+.container-media{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#playButton {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Columns with infos */
+
+.column{
+	background-color: #C7B7A3;
+}
+
+.col-1{
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.col-1 h2 {
+	font-size: 2rem;
+	padding-top: 5%;
+}
+
+.column p {
+	font-size: .95rem;
+	color: #777;
+	padding-top: 1%;
+}
+
+.column h3 {
+	font-size: 1.75rem;
+	padding-bottom: 5%;
+	letter-spacing: -1.5px;
+}
+
+.row-3 div:hover {
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	z-index:10;
+}
+
+.row-3{
+	padding: 8% 10% 10% 10%;
+	text-align: center;
+}
+
+@media (min-width:767px) {
+	.row-3{
+		display: flex;
+	}
+}
+
+.row-3 div {
+	border-radius: 10px;
+	padding: 3% 4% 3% 4%;
+	background: #E8D8C4;
+	transition: all 0.5s ease-out;
+}
+
+.row-3 p{
+	margin-bottom: 5%;
+}
+
+.row-3 i {
+	vertical-align: middle;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+.row-3 a{
+	color: rgb(74, 74, 224);
+}
+
+a:hover {
+	color: rgb(58, 58, 198);
+  }

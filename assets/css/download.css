@@ -1,0 +1,138 @@
+/* Section Defenses*/
+.defenses{
+	background-color: #C7B7A3;
+}
+.defenses h1{
+	background: -webkit-linear-gradient(top, #d37e0e 10%, #440505 90%);
+	background-clip: border-box;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	padding-top: 40px;
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: -3px;
+	line-height: 1.2;
+	margin-bottom: 2%;
+}
+
+.defenses .col:not(:nth-child(2)){
+	margin-bottom: 4%;
+}
+
+.row{
+	justify-content: center;
+	gap: 4%;
+}
+
+@media (min-width:767px) {
+	.row {
+		display: flex;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.liste-sout {
+	text-align: left;
+	font-size: 17px;
+	letter-spacing: -1px;
+	margin-left: 7%;
+
+}
+
+h2 {
+	font-size: 2rem;
+	letter-spacing: -2px;
+	text-align: center;
+	line-height: 1.1;
+	margin-bottom: 3%;
+}
+  
+
+.text-box {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	background: -webkit-linear-gradient(top, #d37e0e 10%, #440505 90%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	border: black;
+}
+
+.bouton {
+	display: inline-block;
+	text-decoration: none;
+	color: #ee4719;
+	border: 2px solid black;
+	padding: 15px 30px;
+	font-size: 20px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	background: rgba(0,0,0,.6);
+	font-variant: small-caps;
+	margin-top: 2%;
+}
+
+.bouton:hover {
+	border: 1px solid #1e224c;
+	background: #1e224c;
+	transition: 1s;
+}
+  a:hover {
+	color: #0a58cb;
+  }
+
+
+  /* Section Images*/
+
+  .images-proxima{
+	background-color: #C7B7A3;
+	padding: 4%;
+}
+
+  .grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto); 
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px;
+  }
+
+  @media (min-width:1001px)
+  {
+	.grid{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, auto); 
+		grid-column-gap: 10px; 
+		grid-row-gap: 10px;
+	  }
+  }
+
+  @media (max-width:767px)
+  {
+	.grid{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(6, auto); 
+		grid-column-gap: 10px; 
+		grid-row-gap: 10px;
+	  }
+  }
+
+  .grid .col{
+	padding: 4% 4% 4% 4%;
+  }
+
+  .item1 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+  }
+
+  .images-proxima img{
+	cursor: pointer;
+  }

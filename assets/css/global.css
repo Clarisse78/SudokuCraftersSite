@@ -1,0 +1,246 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+
+/* ================= ENDS ================ */
+
+* {
+    font-family: 'Anton', sans-serif;
+}
+
+.theme-proxima{
+    background: #561C24;
+}
+
+nav {
+	width: 100%;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 4%;
+	position: relative;
+	overflow: visible;
+    display: block;
+}
+
+.container-menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 720px) {
+.container-menu {
+	justify-content: initial;
+}
+}
+
+@media (min-width: 720px) {
+    nav ul.links-wrapper {
+        display: flex;
+    }
+}
+@media (min-width: 720px) {
+    ul.links-wrapper li {
+        margin-right: 20px;
+    }
+}
+
+ul.links-wrapper {
+	list-style-type: none;
+}
+
+nav.theme-proxima ul.links-wrapper li a:link, nav.theme-proxima ul.links-wrapper li a:visited {
+	color: #fff;
+	line-height: 1.5;
+
+}
+
+ul.links-wrapper li a:link:not(.btn), ul.links-wrapper li a:visited:not(.btn) {
+	text-decoration: none;
+	color: #000;
+}
+
+ul.links-wrapper li a:not(.btn) {
+	display: block;
+	margin-right: 20px;
+	font-size: calc(17px + (19 - 17) * ((100vw - 320px)/(1140 - 320)));
+	font-weight: 600;
+	background-color: transparent;
+	transition: .5s ease-in-out;
+	margin-top: 20px;
+    letter-spacing: -1px;
+}
+
+
+.brand{
+    width:4%;
+	z-index: 99;
+}
+
+@media (max-width:1280px)
+{
+	.brand{
+		width:8%;
+	}
+}
+
+.container-menu {
+	justify-content: initial;
+    padding: 1% 0% 1% 0%;
+}
+
+ul.links-wrapper li {
+	margin-right: 10px;
+	padding: 0% 0% 3% 10%;
+}
+
+
+
+.nav-links ul li:hover {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #983d49;
+	display: block;
+	margin: 0;
+	transition: 0.5s;
+}
+
+
+.links-wrapper li a::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #983d49;
+	display: block;
+	margin: 0;
+	transition: width 0.5s; 
+}
+
+
+.links-wrapper li a:hover:not(.btn)::after,
+.links-wrapper li a:active:not(.btn)::after {
+	width: 100%; 
+}
+
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+.footer{
+	padding: .5em 1.5em;
+	flex-wrap: wrap;
+	width: auto;
+	text-align: center;
+	color: whitesmoke;
+	font-weight: 600;
+  }
+
+  .footer a, .footer p{
+	line-height: 1.5;
+  }
+
+
+
+
+
+
+
+.nav-toggle {
+	display: none;
+  }
+
+@media (max-width: 720px) {
+	.nav-toggle {
+	  display: block;
+	}
+  }
+
+  .nav-toggle {
+	height: 40px;
+	position: absolute;
+	right: 16px;
+	top: 4%;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+}
+
+
+
+@media (max-width: 720px) {
+	ul.links-wrapper {
+	  visibility: hidden;
+	  opacity: 0;
+	  z-index: -1;
+	  transform: translateY(-100%);
+	  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+	  position: fixed;
+	  top: 60px;
+	  right: 0;
+	  left: 0;
+	  text-align: left;
+	  font-size: var(--font-size-base);
+	  padding: 32px 0 10px 40px;
+	}
+  }
+
+  @media (max-width: 650px) {
+	ul.links-wrapper {
+	  top: 50px;
+	}
+  }
+
+  @media (max-width: 500px) {
+	ul.links-wrapper {
+	  top: 33px;
+	}
+  }
+
+
+@media (max-width: 720px) {
+	ul.links-wrapper.active {
+	  visibility: visible;
+	  opacity: 1;
+	  z-index: 98;
+	  transform: translateY(0);
+	  display: block;
+	  overscroll-behavior: contain;
+	  overscroll-behavior-y: contain;
+	  overscroll-behavior-y: contain;
+	  overflow-x: hidden;
+	  overflow-y: scroll;
+	  overflow-y: hidden;
+	  -webkit-overflow-scrolling: touch;
+	}
+  }
+
+  ul.links-wrapper.active {
+    background: #561C24;
+  }
+  
+
+
+  .nav-toggle .bar-1, .nav-toggle .bar-2, .nav-toggle .bar-3 {
+	background: #fff;
+  }
+
+
+  .nav-toggle .bar-1, .nav-toggle .bar-2, .nav-toggle .bar-3 {
+	width: 24px;
+	height: 2px;
+	margin: 7px 4px;
+	transition: 0.4s;
+  }

@@ -1,0 +1,130 @@
+/*Story section*/
+.story{
+	background-color: #C7B7A3;
+	padding-bottom: 4%;
+}
+
+.story h1{
+	background: -webkit-linear-gradient(top, #d37e0e 10%, #440505 90%);
+	background-clip: border-box;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	padding-top: 40px;
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: -3px;
+}
+
+.card-story{
+	background: #C7B7A3;
+	border-radius: 6px;
+	margin: 3% 4% 0% 4%;
+	border-radius: 10px;
+	padding: 3%;
+	border-left: 2px solid #1e224c;
+	border-right: 2px solid #1e224c;
+	transition: 0.5s;
+
+}
+
+.card-story p{
+	font-family: 'Dancing Script', cursive;
+	font-variant: discretionary-ligatures;
+	text-align: center;
+}
+
+.card-story:hover {
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	z-index:10;
+    color: #542121;
+	transform: scale(1.05);
+}
+
+
+/*Members section*/
+
+.members{
+	background-color: #C7B7A3;
+	padding-bottom: 8%;
+}
+
+.members .col img{
+	padding-top: 5%;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+	vertical-align: middle; /* aligner verticalement les images */
+}
+
+.members h1{
+	text-align: center;
+	background: -webkit-linear-gradient(top, #d37e0e 10%, #440505 90%);
+	background-clip: border-box;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 36px;
+	letter-spacing: -3px;
+	padding-bottom: 1%;
+	padding-top: 2%;
+}
+
+.members .col{
+	background: #E8D8C4;
+	text-align: center;
+	padding: 3%;
+	border-radius: 10px;
+	border: 2px solid #1e224c;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	transition: 0.5s;
+}
+
+.members .col:hover{
+	transform: rotate(2deg) scale(1.05);
+	box-shadow: 0 0 15px #a86630;
+	z-index:10;
+}
+
+
+.members .grid{
+	padding: 3% 10% 0% 10%;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    grid-column-gap: 10px; 
+    grid-row-gap: 30px;
+  }
+
+
+  @media (min-width:1001px)
+  {
+	.members .grid{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, auto); 
+	  }
+  }
+
+  @media (max-width:767px)
+  {
+	.members .grid{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(4, auto); 
+	  }
+  }
+
+.members h4{
+	font-family: 'EB Garamond', serif;
+  	font-size: 17px;
+  	margin-bottom: .475rem;
+  	margin-top: 3%;
+}
+
+.members h3{
+	letter-spacing: -1.5px;
+	font-size: 1.3rem;
+	font-weight: 900;
+}
