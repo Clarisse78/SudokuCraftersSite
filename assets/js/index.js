@@ -185,3 +185,10 @@ function isValid(grid, row, col, num) {
 
 
 });
+
+
+// Fonction pour ouvrir une image en grand
+function openPicture(imagePath) {
+  // Ouvrir l'image principale dans une nouvelle fenêtre
+  window.open(imagePath);
+}
