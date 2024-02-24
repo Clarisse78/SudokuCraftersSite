@@ -11,69 +11,234 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
 </head>
 <body style="max-width: 1920px; margin-left: auto; margin-right: auto;">
-
-    <nav class="theme-proxima"><div class="container-menu">
-        <a href="#" class="brand">
-            <img src="assets/img/LOGO1.png" class="logo-main" alt="Sample website logo">
-        </a>
     
-        <div class="container-menu-links">
+    <section class="main">
+
+        <section class="one">
+          <div class="presentation sec" id="home">
+            <h1>You want to solve a sudoku with one click ?</h1>
+
+            <h2>We present you SudokuCrafters, an application that can do that !</h2>
+            <img src="assets/img/LOGO1.png">
+          </div>
+
+          <div class="aboutus hidden sec" id="about">
+            <section class="members">
+              <h1>SudokuCrafters Members</h1>
+              <div class="grid">
+                  <div class="col">
+                      <h3>Anthony LAWANDOS</h3>
+                      <img src="assets/img/anthony.lawandos.png">
+                      <h4>🇱🇧</h4>
+                  </div>
+                  <div class="col">
+                      <h3>Lucil FINKELSTEIN</h3>
+                      <img src="assets/img/lucil.finkelstein.png">
+                      <h4>You know...</h4>
+                  </div>
+                  <div class="col">
+                      <h3>Lucas DEMULIERE</h3>
+                      <img src="assets/img/lucas.demuliere.png">
+                      <h4>Gym tech</h4>
+                  </div>
+                  <div class="col">
+                      <h3>Lucile PELOU</h3>
+                      <img src="assets/img/lucile.pelou.png">
+                      <h4>The décadence.</h4>
+                  </div>
+              </div>
+          </section>
+          </div>
+
+          <section class="ressources-docs hidden sec" id="docs">
+            <h1>Here are the documents of our presentations.</h1>
+            <div class="grid">
+                <a href="assets/dos/PlanSoutenance1.pdf">	
+                    <div>Defense Plan 1</div>	
+                </a>
+                <a href="assets/dos/PlanSoutenance2.pdf">	
+                    <div>Defense Plan 2</div>	
+                </a>
+                <a href="assets/dos/RapportSoutenance1.pdf">	
+                    <div>Defense Report 1</div>	
+                </a>
+                <a href="assets/dos/RapportSoutenance2.pdf">	
+                    <div>Defense Report 2</div>	
+                </a>
+            </div>
+        </section>
+
+          <div class="defenses hidden sec" id="view">
+            <h1>The differents versions of the project</h1>
     
-            <div class="nav-toggle" id="nav-toggle-btn">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
+            <div class="row">
+              <div class="col">
+                <h2><strong>v1</strong>  <em>(First defense)</em>
+                  <span class="image-container" title="Non disponible (Enfouie dans l'ordi de Godric)"></span>
+                </h2> 
+                <div class="content">
+                  <ul class="liste-sout">
+                    <li>Manual rotation and removal of colors
+                    </li>
+                    <li>Sudoku grid and square detections
+                    </li>
+                    <li>Cropping the image
+                    </li>
+                    <li>Sudoku solving
+                    </li>
+                    <li>Beginning of the neural network
+                    </li>
+                    <li>Reconstruction of the grid and saving the result
+                    </li>
+                  </ul>
+                  <div class="text-box">
+                    <a href="assets/dos/RapportSoutenance1.pdf" class="bouton"><strong>Learn more</strong></a>
+                  </div>
+                </div>
+              </div>
+                <div class="col">
+                  <h2><strong>v2</strong>  <em>(Second defense)</em>
+                    <span class="image-container" title="Non disponible (Peut-être bientôt)"></span>
+                  </h2> 
+                  <ul class="liste-sout">
+                    <li>Automatic rotation and complete preprocessing
+                    </li>
+                    <li>Better box detection
+                    </li>
+                    <li>Finishing the neural network
+                    </li>
+                    <li>Graphical interface
+                    </li>
+                    <li>Website
+                    </li>
+                    <li>Miscellaneous and varied settings
+                    </li>
+                  </ul>
+                <div class="text-box">
+                  <a href="assets/dos/RapportSoutenance2.pdf" class="bouton"><strong>Learn more</strong></a>
+                </div>
+              </div>
             </div>
-    
-            <ul class="links-wrapper" id="links-wrapper">
-                <li><a href="#">Home</a></li>
-                <li><a href="view.html">View</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="ressources.html">Ressources</a></li>
-            </ul>
-        </div></div></nav>
+          </div>
 
-        <div class="main-background">
-            <div class="text-box">
-                <img src="assets/img/LOGO1.png" style="width: 20%; margin-left: auto;
-                margin-right: auto;">
-            <h1><b>SudokuCrafters</b></h1>
-            <p><b>SudokuCrafters presents its application for solving sudokus.</b></p>
-        </div>
-
-    </div>
-
-	<section class="column">
-        <div class="container-media">
-            <video controls width="60%" playsinline="" muted="" autoplay="" poster="assets/video/poster_video_sudoku.jpg" class="background-video" disablepictureinpicture="" preload="auto"><source src="assets/video/video_presentation_sudokucrafters.mp4" type="video/mp4"></video>
-        </div>
-
-        <div class="row-3">
-            <div>	
-                <h3>View</h3>	
-                <p>View the differents versions of the project and images.</p>	<a href="view.html" class="btn"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+          <section class="tools hidden sec" id="tools">
+            <h1>Tools used</h1>
+            <div class="grid">
+                <a href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">
+                    <div class="col">
+                        <img src="assets/img/langageC.png">
+                    </div>
+                </a>
+                <a href="https://discord.com/" target="_blank">
+                    <div class="col">
+                        <img src="assets/img/discord.png">
+                    </div>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <div class="col">
+                        <img src="assets/img/github.png">
+                    </div>
+                </a>
+                <a  href="https://www.libsdl.org/" target="_blank">
+                    <div class="col">
+                        <img src="assets/img/sdl.png">
+                    </div>
+                </a>
+                <a href="https://www.gtk.org/" target="_blank">
+                    <div class="col">
+                        <img src="assets/img/gtk.png">
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Glade_Interface_Designer" target="_blank">
+                    <div class="col">
+                        <img style="width: 30.2%;" src="assets/img/glade.png">
+                    </div>
+                </a>
             </div>
+        </section>
 
-            <div>	
-                <h3>About us</h3>	
-                <p>The presentation of the members.</p>	<a href="about.html" class="btn"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+     
+          <video id="demo" controls width="60%" playsinline="" muted="" poster="assets/video/poster_video_sudoku.jpg" class="background-video hidden sec" disablepictureinpicture="" preload="auto"><source src="assets/video/video_presentation_sudokucrafters.mp4" type="video/mp4"></video>
+  
+
+          <section class="images-proxima hidden sec" id="pictures">
+            <h1>Some pictures</h1>
+            <div class="grid-pictures">
+                <div class="col item-1">
+                    <img src="assets/img/image1.png" onclick="openPicture('assets/img/image1.png')">
+                </div>
+                <div class="col">
+                    <img src="assets/img/image2.png" onclick="openPicture('assets/img/image2.png')">
+                </div>
+                <div class="col">
+                    <img src="assets/img/image3.jpeg" onclick="openPicture('assets/img/image3.jpeg')">
+                </div>
+                <div class="col">
+                    <img src="assets/img/image4.png" onclick="openPicture('assets/img/image4.png')">
+                </div>
             </div>
+          </section>
 
-            <div>	
-                <h3>Ressources</h3>	
-                <p>Presentations of the tools and documents used and created for the project</p>	<a href="ressources.html" class="btn"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
 
+            <div class="sudoku" >
+                <div class="grid play" draggable="false" id="grid1" ondragend="drop(event)">
+                  <div class="cell">5</div><div class="cell">3</div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell">7</div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                  <div class="pages" id="viewPage" onclick="changePage(viewObj)">View</div>
+                </div>
+                <div class="grid play" draggable="false" id="grid2" ondragend="drop(event)">
+                  <div class="cell">6</div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell">1</div><div class="cell">9</div><div class="cell">5</div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                  <div class="pages" onclick="changePage(pictObj)">Pictures</div>
+                </div>
+                <div class="grid play" draggable="false" id="grid3" ondragend="drop(event)">
+                  <div class="cell"></div><div class="cell">9</div><div class="cell">8</div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell">6</div><div class="cell"></div>
+                  <div class="pages" onclick="changePage(aboutObj)">About</div>
+                </div>
+                <div class="grid notplay" draggable="false" id="grid4" ondragend="drop(event)">
+                  <div class="cell">8</div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell button" onclick="addPlay()"></div><div class="cell">6</div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell">3</div>
+                </div>
+                <div class="grid play play-hover" draggable="false" id="grid5" ondragend="drop(event)">
+                  <div class="cell">4</div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell">8</div><div class="cell"></div><div class="cell">3</div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell">1</div>
+                  <div class="pages" onclick="changePage(homeObj)">Home</div>
+                </div>
+                <div class="grid notplay" draggable="false" id="grid6" ondragend="drop(event)">
+                  <div class="cell">7</div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell">2</div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell">6</div>
+
+                </div>
+                <div class="grid play" draggable="false" id="grid7" ondragend="drop(event)">
+                  <div class="cell"></div><div class="cell">6</div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell">2</div><div class="cell">8</div><div class="cell"></div>
+                  <div class="pages" onclick="changePage(docsObj)">Documents</div>
+                </div>
+                <div class="grid play" draggable="false" id="grid8" ondragend="drop(event)">
+                  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell">4</div><div class="cell">1</div><div class="cell">9</div>
+                  <div class="cell"></div><div class="cell"></div><div class="cell">5</div>
+                  <div class="pages" onclick="changePage(demoObj)">Demo</div>
+                </div>
+                <div class="grid play" draggable="false" id="grid9" ondragend="drop(event)">
+                  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell">8</div><div class="cell"></div>
+                  <div class="cell"></div><div class="cell">7</div><div class="cell">9</div>
+                  <div class="pages" onclick="changePage(toolsObj)">Tools</div>
+                </div>
+              </div>
+        </section>
     </section>
 
-
-<section class="footer theme-proxima">
-    <p>Github<a href="https://github.com/Clarisse78/SudokuCraftersSite"><i class="fab fa-github fa-fw" style="color:blue; padding-left: 5px;"></i> </a></p>
-    <p>Made With <i class="fa fa-heart fa-solid" style="color: red;"></i> by SudokuCrafters</p>
-</section>
-
-<script src="assets/js/global.js"></script>
+    <script src="assets/js/index.js"></script>
 
 </body>
 </html>
